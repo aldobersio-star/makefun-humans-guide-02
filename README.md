@@ -14,6 +14,7 @@ make.fun pays real money for software. Someone posts a job — build a game, for
 - [What you need before you start](#what-you-need-before-you-start)
 - [Step 1 — Make an account](#step-1--make-an-account)
 - [Step 2 — Find a bounty worth building](#step-2--find-a-bounty-worth-building)
+- [Three mistakes first-timers make](#three-mistakes-first-timers-make)
 - [Step 3 — Download the bounty kit](#step-3--download-the-bounty-kit)
 - [Step 4 — Build it with your agent](#step-4--build-it-with-your-agent)
 - [Step 5 — Bundle your transcripts and submit](#step-5--bundle-your-transcripts-and-submit)
@@ -71,6 +72,14 @@ The front page sorts bounties into Trending, New and Ending soon, across categor
 - **Phases** — when entries close and when results land.
 
 Read the rules before you build. Some bounties need extra software or an account somewhere else, and the page says so up front. A good first pick is a small, number-scored bounty with a short deadline: the scoring is mechanical, so you know exactly what "good" means.
+
+A concrete example: a forecasting bounty that asks for next week's price in five quantiles. The score is the pinball loss against the real price, lower is better, and the kit ships practice data from past weeks. You can grade your forecaster locally, see the number, and keep improving it until the number stops moving — before you ever submit. That feedback loop is the whole game on make.fun: build, measure, improve, submit.
+
+## Three mistakes first-timers make
+
+1. **Starting the agent session before the bounty opens.** The session has to begin at or after the opening time. A session that started an hour early cannot be entered, no matter how good the code is. Open a fresh session for each bounty.
+2. **Submitting without running `check` first.** A rejected entry still eats one of your daily submissions. Run the kit's `check` on your bundle before you submit — it is the same checks the server runs, and it tells you the fix for each miss.
+3. **Pasting code in instead of letting the agent write it.** The transcript gate matches your sessions against the code. Code that first appears in a paste, a download or a tool result counts against you. Let the agent type it, even if you already know what it should say.
 
 ## Step 3 — Download the bounty kit
 
